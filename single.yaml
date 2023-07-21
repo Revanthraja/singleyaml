@@ -42,8 +42,8 @@ extra_text_encoder_params: null
   #learning_rate: 5e-6
   #adam_weight_decay: 0.2
 train_batch_size: 1
-max_train_steps: 10
-checkpointing_steps: 25
+max_train_steps: 1000
+checkpointing_steps: 250
 trainable_modules:
   # If you want to ignore temporal attention entirely, remove "attn1-2" and replace with ".attentions"
   # This is for self attetion. Activates for spatial and temporal dimensions if n_sample_frames > 1
